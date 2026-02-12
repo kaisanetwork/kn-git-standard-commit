@@ -1,5 +1,5 @@
 ---
-name: kn-git-standar-commit
+name: kn-git-standard-commit
 description: "Unified git commit workflow: plan commit boundaries, stage intentionally, generate Conventional Commit messages, enforce git safety rules, and run minimum verification before commit. Use when the user asks to commit, split commits, stage changes, craft commit messages, or mentions '/commit'."
 license: MIT
 allowed-tools: Bash

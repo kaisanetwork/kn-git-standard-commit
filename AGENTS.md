@@ -1,7 +1,7 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-This repository is centered on `SKILL.md`, which defines the `kn-git-standar-commit` workflow and its Conventional Commits 1.0.0 rules.
+This repository is centered on `SKILL.md`, which defines the `kn-git-standard-commit` workflow and its Conventional Commits 1.0.0 rules.
 
 - `SKILL.md`: Source of truth for commit workflow, Conventional Commits 1.0.0 compliance, SemVer intent mapping, and git safety protocol.
 - `.git/`: Local repository metadata.

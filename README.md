@@ -7,7 +7,7 @@ Unified workflow for safe, intentional Git commits aligned with Conventional Com
 Repository: `kn-git-standard-commit`
 
 ## What this skill does
-`kn-git-standar-commit` guides commit creation from inspection to verification:
+`kn-git-standard-commit` guides commit creation from inspection to verification:
 
 - Defines logical commit boundaries
 - Stages changes intentionally (`git add`, `git add -p`)
