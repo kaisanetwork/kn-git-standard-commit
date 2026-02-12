@@ -1,6 +1,8 @@
-# kn-git-standard-commit
+# KN Git Standard Commit
 
 Unified workflow for safe, intentional Git commits aligned with Conventional Commits 1.0.0.
+
+Repository: `kn-git-standard-commit`
 
 ## What this skill does
 `kn-git-standar-commit` guides commit creation from inspection to verification:
