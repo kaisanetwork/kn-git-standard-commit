@@ -26,7 +26,7 @@ Default behavior if unclear:
 - Use Conventional Commits.
 - Keep subject <= 72 chars.
 
-## Conventional Commit Format
+## Conventional Commits 1.0.0 (Required)
 
 ```text
 <type>[optional scope]: <description>
@@ -36,7 +36,29 @@ Default behavior if unclear:
 [optional footer(s)]
 ```
 
-## Allowed Types
+### Specification-aligned rules
+
+- Header MUST be `<type>[optional scope][optional !]: <description>`.
+- `feat` MUST be used for new features.
+- `fix` MUST be used for bug fixes.
+- `scope` MAY be used and MUST be a noun in parentheses, e.g. `feat(parser): ...`.
+- Description MUST immediately follow `: ` and be a short summary.
+- Body MAY be added after one blank line and can be multi-paragraph.
+- Footer(s) MAY be added after one blank line, following git trailer style (e.g. `Refs: #123`, `Reviewed-by: Name`).
+- Footer tokens use `-` instead of spaces, except `BREAKING CHANGE`.
+- Breaking changes MUST be indicated by either:
+  - `!` before `:`, e.g. `feat(api)!: ...`, or
+  - footer `BREAKING CHANGE: <description>`.
+- `BREAKING-CHANGE` is accepted as synonymous footer token.
+- Types are case-insensitive for tooling, but this skill enforces lowercase for consistency.
+
+### SemVer mapping (intent)
+
+- `fix` -> PATCH
+- `feat` -> MINOR
+- Any commit with breaking change (`!` or `BREAKING CHANGE`) -> MAJOR
+
+### Supported types in this skill
 
 - `feat`: new feature
 - `fix`: bug fix
@@ -50,11 +72,15 @@ Default behavior if unclear:
 - `chore`: maintenance/misc
 - `revert`: revert a previous commit
 
-## Breaking Changes
+### Valid examples
 
-Use either:
-- `type(scope)!: summary`
-- or footer: `BREAKING CHANGE: ...`
+```text
+feat(lang): add Polish language
+fix: prevent racing of requests
+chore!: drop support for Node 6
+
+BREAKING CHANGE: use JavaScript features not available in Node 6.
+```
 
 ## Unified Workflow (must follow in order)
 
