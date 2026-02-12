@@ -1,4 +1,4 @@
-# KN Git Standard Commit
+# Git Standard Commit
 
 Unified workflow for safe, intentional Git commits aligned with Conventional Commits 1.0.0.
 
