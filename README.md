@@ -1,5 +1,7 @@
 # Git Standard Commit
 
+![Git Standard Commit Header](Git_Standard_Commit_Header.png)
+
 Unified workflow for safe, intentional Git commits aligned with Conventional Commits 1.0.0.
 
 Repository: `kn-git-standard-commit`
