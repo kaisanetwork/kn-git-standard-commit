@@ -1,10 +1,12 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-This repository currently contains one primary artifact: `SKILL.md`, which defines the `kn-git-standar-commit` workflow and safety rules.
+This repository is centered on `SKILL.md`, which defines the `kn-git-standar-commit` workflow and its Conventional Commits 1.0.0 rules.
 
-- `SKILL.md`: Source of truth for commit workflow, allowed commit types, and git safety protocol.
+- `SKILL.md`: Source of truth for commit workflow, Conventional Commits 1.0.0 compliance, SemVer intent mapping, and git safety protocol.
 - `.git/`: Local repository metadata.
+- `.gitignore`: Local ignore rules.
+- `README.md`: Project overview and quick usage guidance.
 
 Keep future additions small and explicit. If you add examples or references, place them in clearly named folders (for example, `examples/` or `references/`) and link them from `SKILL.md`.
 
@@ -37,10 +39,11 @@ Current validation is manual review.
 When automated checks are added, include command names and expected pass criteria in this section.
 
 ## Commit & Pull Request Guidelines
-This project follows Conventional Commits as defined in `SKILL.md`.
+This project follows Conventional Commits 1.0.0 as defined in `SKILL.md`.
 
-- Format: `<type>[scope]: <description>`
-- Example: `docs(skill): clarify staged diff review step`
+- Format: `<type>[optional scope][optional !]: <description>`
+- Example: `docs(skill): clarify breaking change footer rules`
+- Breaking changes: use `!` before `:` and/or footer `BREAKING CHANGE: <description>`.
 - Keep subject lines imperative and <= 72 characters.
 
 Before committing, review staged content and run minimum relevant verification. PRs should include: purpose, summary of changes, and any rationale for workflow or safety-rule updates.
